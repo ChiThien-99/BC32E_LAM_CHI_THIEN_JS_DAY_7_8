@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Thien JS Day 7,8</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div
+        class="header"
+        style="
+          width: 100%;
+          height: auto;
+          background-color: darkgrey;
+          padding: 20px;
+          border-radius: 10px;
+        "
+      >
+        <div class="form-group">
+          <input
+            type="number"
+            class="form-control mb-2"
+            id="number"
+            placeholder="Nhập số"
+          />
+          <button class="btn btn-success mb-2" id="addNumber">Thêm số</button>
+          <div class="alert alert-success" id="arrNumber"></div>
+        </div>
+      </div>
+
+      <hr />
+      <!-- Bài tập 1:Tính tổng số dương -->
+      <div class="body" style="width: 100%;height:400px;overflow-y:scroll;padding: 4px;">
+        <h3 class="text-success">Tổng số dương</h3>
+        <button class="btn btn-outline-success mb-2" id="tinhBT1">Tính</button>
+        <div class="alert alert-success" id="outputBT1"></div>
+        <hr />
+        <!-- Bài tập 2:Đếm có bao nhiêu số dương -->
+        <h3 class="text-success">Đếm bao nhiêu số dương</h3>
+        <button class="btn btn-outline-success mb-2" id="tinhBT2">Đếm</button>
+        <div class="alert alert-success" id="outputBT2"></div>
+        <hr />
+        <!-- Bài tập 3:Tìm số nhỏ nhất -->
+        <h3 class="text-success">Tìm số nhỏ nhất</h3>
+        <button class="btn btn-outline-success mb-2" id="tinhBT3">Tìm</button>
+        <div class="alert alert-success" id="outputBT3"></div>
+        <hr />
+        <!-- Bài tập 4:Tìm số dương nhỏ nhất -->
+        <h3 class="text-success">Tìm số dương nhỏ nhất</h3>
+        <button class="btn btn-outline-success mb-2" id="tinhBT4">Tìm</button>
+        <div class="alert alert-success" id="outputBT4"></div>
+        <hr />
+        <!-- Bài tập 5:Tìm số chẵn cuối cùng -->
+        <h3 class="text-success">Tìm số chẵn cuối cùng</h3>
+        <button class="btn btn-outline-success mb-2" id="tinhBT5">Tìm</button>
+        <div class="alert alert-success" id="outputBT5"></div>
+        <!-- Bài tập 6:Hoán đổi vị trí -->
+        <hr>
+        <h3 class="text-success">Hoán đổi vị trí</h3>
+        <div class="form-inline">
+          <input type="number" class="form-control mr-3" id="viTri1" placeholder="Nhập vị trí 1">
+          <input type="number" class="form-control" id="viTri2" placeholder="Nhập vị trí 2">
+        </div>
+        <button class="btn btn-outline-success my-2" id="tinhBT6">Hoán đổi</button>
+        <div class="alert alert-success" id="outputBT6"></div>
+        <hr>
+        <!-- Bài tập 7:Sắp xếp tăng dần -->
+        <h3 class="text-success">Sắp xếp tăng dần</h3>
+        <button class="btn btn-outline-success my-2" id="tinhBT7">Sắp xếp</button>
+        <div class="alert alert-success" id="outputBT7"></div>
+        <!-- Bài tập 8:Tìm số nguyên tồ đầu tiên -->
+        <hr>
+        <h3 class="text-success">Tìm số nguyên tố đầu tiên</h3>
+        <button class="btn btn-outline-success my-2
+        " id="tinhBT8">Tìm</button>
+        <div class="alert alert-success" id="outputBT8"></div>
+        <!-- Bài tập 9:Đếm số nguyên -->
+        <hr>
+        <h3 class="text-success">Đếm số nguyên</h3>
+        <div class="form-inline mb-2">
+          <input type="text" class="form-control mr-2" id="soThuc" placeholder="Nhập số thực">
+          <button class="btn btn-outline-success" id="addSoThuc">Thêm số</button>
+        </div>
+        <div class="alert alert-success" id="mangSoThuc"></div>
+        <button class="btn btn-outline-success my-2" id="tinhBT9">Đếm</button>
+        <div class="alert alert-success" id="outputBT9"></div>
+        <!-- Bài tập 10:So sánh số âm,số dương -->
+        <hr>
+        <h3 class="text-success">So sánh số âm,số dương</h3>
+        <button class="btn btn-outline-success my-2" id="tinhBT10">So sánh</button>
+        <div class="alert alert-success" id="outputBT10"></div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./method.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
